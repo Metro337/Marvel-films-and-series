@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 7rem;
+    
+} 
+
+#navbar-logo{
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.navbar-link-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar-marvel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    z-index: 999;
+}
+
+.navbar-links{
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 0.8em;
+    margin-left: 2rem;
+    text-decoration: underline;
+    padding: 10px;
+    transition: 0.5s;
+    color: white;
+}
+.navbar-links:hover{
+    background: var(--crl);
+    box-shadow: 0 0 10px var(--crl),
+    0 0 30px var(--crl),
+    0 0 60px var(--crl),
+    0 0 100px var(--crl);
+}
+
+
+.navbar-links:hover{
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height:30px;
+    float: right;
+    cursor: pointer;
+    justify-content: right;
+    display: none;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1015px) {
+   nav #icon{
+       display: block;
+   }
+   nav ul{
+        z-index: 999;
+        position: fixed;
+        width: 20rem;
+        height: 30rem;
+        background: #2f3640;
+        top: 80px;
+        right: 3em;
+        border-radius: 50px;
+        transition:all 0.3s;
+   }
+   .navbar-link-menu{
+       display: block;
+       text-align-last: center;
+   }
+   nav ul.show{
+       right: 2em;
+       display: none;
+   }
+}
+
+

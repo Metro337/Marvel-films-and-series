@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+                    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+       <img id="navbar-logo" width="50px" height="70px" src="img/amblem2.png">
+       <a href="#home" id="navbar-marvel"><img width="100xp" src="/img/marvel.jpeg"></a>
+            <div class="dropdown">
+                    <ul class="navbar-link-menu">
+                        <li><a href="#series" style="--crl:red;--i:0;" class="navbar-links"><span>Films</span></a></li>
+                        <li><a href="#films" style="--crl:red;--i:0;" class="navbar-links">Series</a></li>
+                        <li><a href="#signup" style="--crl:blue;--i:0;" class="navbar-links login">Sign Up</a></li>
+                        <li><a href="#login" style="--crl:blue;--i:0;" class="navbar-links login">Login</a></li>
+                    </ul>
+                <label id="icon">
+                    <i class="fas fa-align-justify"></i>
+                </label>
+            </div>
+      </div> 
+    </nav>
+            <!-- Video(s) -->
+            <video id="video" width="100%" height="800px" controls loop autoplay muted src="/video/marvel.mp4"></video>
+
+                <!-- Film/series -->
+
+
+            <!-- js -->
+    <script>
+        $(document).ready(function(){
+            $(`#icon`).click(function(){
+                $(`ul`).toggleClass(`show`);
+            });
+        });
+    </script>
+</body>
+</html>
