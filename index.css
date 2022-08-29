@@ -1,112 +1,220 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap');/* bg  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background-image:url("./img/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+/* red light top */
+.red-light-top {
+  position: absolute;
+  z-index: -1;
+  height: 30vh;
+  width: 100vw;
+  background: linear-gradient(0deg,transparent,#B21212);
+
+}
+/* red light left */
+.red-light-left {
+  position: absolute;
+  z-index: -1;
+  width: 40vw;
+  height: 100%;
+  background: linear-gradient(90deg,#B21212,transparent);
+}
+/* navbar container */
+.navbar {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+}
+/* navbar left item div */
+.navbarLeftItemDiv{
+  width: 33.3%;
+  text-align: center;
+  margin-top: 2%;
+}
+/* navbar left item div a */
+.navbarLeftItemDiv a{
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  font-size: xx-large;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+/* navbar left item div hover */
+.navbarLeftItemDiv a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* navbar center item div */
+.navbarCenterItemDıv {
+  width: 33.3%;
+  text-align: center;
+  margin-top: 2%;
 }
 
-.navbar{
-    background: #C33764;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
+/* navbar right item div */
+.navbarRightItemDiv{
+  width: 33.3%;
+  text-align: center;
+  margin-top: 2%;
 }
-
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 7rem;
-    
-} 
-
-#navbar-logo{
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
+.navbarRightItemDiv img {
+  margin-right: 5%;
+  margin-left: 5%;
 }
-
-.navbar-link-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
+/* navbar right item div a */
+.navbarRightItemDiv a{
+  margin-right: 5%;
+  margin-left: 5%;
+  display: inline;
+  text-decoration: none;
+  font-size: xx-large;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
-
-#navbar-marvel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25%;
-    z-index: 999;
+/* navbar right item dib a hover */
+.navbarRightItemDiv a:hover{
+  font-weight: bold;
+  text-decoration: underline;
 }
+/* navbar container end */
 
-.navbar-links{
-    display: inline-block;
-    justify-content: center;
-    text-decoration: none;
-    margin-top: 0.8em;
-    margin-left: 2rem;
-    text-decoration: underline;
-    padding: 10px;
-    transition: 0.5s;
-    color: white;
+/* section */
+.section {
+  margin-left: 5%;
+  width: 25%;
 }
-.navbar-links:hover{
-    background: var(--crl);
-    box-shadow: 0 0 10px var(--crl),
-    0 0 30px var(--crl),
-    0 0 60px var(--crl),
-    0 0 100px var(--crl);
+/* play - trailer div */
+.play-trailer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-
-.navbar-links:hover{
-    text-decoration: none;
-    border-radius: 10px;
-    transition: .2s;
+/* trailer */
+.play-trailer h1 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  font-family: sans-serif;
 }
-nav #icon{
-    color: white;
-    font-size: 30px;
-    line-height:30px;
-    float: right;
-    cursor: pointer;
-    justify-content: right;
-    display: none;
-    margin-top: 20px;
+/* trailer hover  */
+.play-trailer h1:hover{
+  text-decoration: underline;
+  text-decoration-color: #FF0202;
 }
-
-@media screen and (max-width: 1015px) {
-   nav #icon{
-       display: block;
-   }
-   nav ul{
-        z-index: 999;
-        position: fixed;
-        width: 20rem;
-        height: 30rem;
-        background: #2f3640;
-        top: 80px;
-        right: 3em;
-        border-radius: 50px;
-        transition:all 0.3s;
-   }
-   .navbar-link-menu{
-       display: block;
-       text-align-last: center;
-   }
-   nav ul.show{
-       right: 2em;
-       display: none;
-   }
+/* title  */
+#title {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 5.5rem;
 }
+/* small stitle */
+#sm-title {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+/* section text */
+.section p{
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+}
+/* seciton star point img */
+#star-point {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: block;
+}
+/* play button */
+#play-button {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: block;
+  width: 60%;
+  background: #FF000B;
+  border-radius: 39px;
+  text-align: center;
+}
+#play-button:hover{
+  background: #e0020c;
+}
+/* play button hover */
+/* button text */
+#play-button p{
+  display: inline;
+  font-size: 2.0rem;
+  color: white;
+  font-family: sans-serif;
+}
+/* play button img */
+#play-button img {
+  display: inline;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 25px;
+}
+/* play - trailer div */
 
-
+/* card list */
+.card-list {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20%;
+  padding: 5%;
+  background: linear-gradient(0deg,transparent,#C11D4D);
+  justify-content: space-between;
+}
+/* card1 */
+.card1 img{
+  transition-duration: 0.5s;
+}
+/* card1 hover */
+.card1 img:hover{
+  transition-duration: 0.5s;
+  padding-top: 5%;
+}
+/* card2 */
+.card2 img{
+  transition-duration: 0.5s;
+}
+/* card2 hover */
+.card2 img:hover{
+  transition-duration: 0.5s;
+  padding-top: 5%;
+}
+/* card3 */
+.card3 img{
+  transition-duration: 0.5s;
+}
+/* card3 hover */
+.card3 img:hover{
+  transition-duration: 0.5s;
+  padding-top: 5%;
+}
+/* card4 */
+.card4 img{
+  transition-duration: 0.5s;
+}
+/* card4 hover */
+.card4 img:hover{
+  transition-duration: 0.5s;
+  padding-top: 5%;
+}
+/* seciton end */
