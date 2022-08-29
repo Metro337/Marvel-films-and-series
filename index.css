@@ -20,7 +20,7 @@ body {
   position: absolute;
   z-index: -1;
   height: 30vh;
-  width: 10vw;
+  width: 100vw;
   background: linear-gradient(0deg,transparent,#B21212);
 
 }
