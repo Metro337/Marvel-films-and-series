@@ -5,10 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  min-height: 100%;
+  position: relative;
+}
 body {
-  height: 100vh;
-  width: auto;
   background-image:url("./img/bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,7 +20,7 @@ body {
   position: absolute;
   z-index: -1;
   height: 30vh;
-  width: 100vw;
+  width: 10vw;
   background: linear-gradient(0deg,transparent,#B21212);
 
 }
@@ -27,8 +28,8 @@ body {
 .red-light-left {
   position: absolute;
   z-index: -1;
-  height: 100vh;
   width: 40vw;
+  height: 100%;
   background: linear-gradient(90deg,#B21212,transparent);
 }
 /* navbar container */
@@ -167,5 +168,53 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   height: 25px;
+}
+/* play - trailer div */
+
+/* card list */
+.card-list {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20%;
+  padding: 5%;
+  background: linear-gradient(0deg,transparent,#C11D4D);
+  justify-content: space-between;
+}
+/* card1 */
+.card1 img{
+  transition-duration: 0.5s;
+}
+/* card1 hover */
+.card1 img:hover{
+  transition-duration: 0.5s;
+  padding-top: 5%;
+}
+/* card2 */
+.card2 img{
+  transition-duration: 0.5s;
+}
+/* card2 hover */
+.card2 img:hover{
+  transition-duration: 0.5s;
+  padding-top: 5%;
+}
+/* card3 */
+.card3 img{
+  transition-duration: 0.5s;
+}
+/* card3 hover */
+.card3 img:hover{
+  transition-duration: 0.5s;
+  padding-top: 5%;
+}
+/* card4 */
+.card4 img{
+  transition-duration: 0.5s;
+}
+/* card4 hover */
+.card4 img:hover{
+  transition-duration: 0.5s;
+  padding-top: 5%;
 }
 /* seciton end */
