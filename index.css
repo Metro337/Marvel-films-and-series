@@ -11,8 +11,18 @@ body {
   height: 100vh;
   width: auto;
   background-image:url("./img/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
-
+/* red light left */
+.red-light {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 40vw;
+  background: linear-gradient(90deg,#B21212,transparent);
+}
 /* navbar container */
 .navbar {
   height: 30%;
@@ -76,8 +86,6 @@ body {
 
 /* section */
 .section {
-  height: 100vh;
-  width: 100%;
 }
 
 /* seciton end */
